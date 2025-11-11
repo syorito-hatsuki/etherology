@@ -1,25 +1,38 @@
 {
   "schemaVersion": 1,
-  "id": "${modId}",
+  "id": "etherology",
   "version": "${modVersion}",
-  "name": "${modName}",
-  "description": "${modDescription}",
+  "name": "Etherology",
+  "description": "Science is indistinguishable from magic!",
   "authors": [
-    "Syorito Hatsuki"
+    "Syorito Hatsuki",
+    "Faradey",
+    "Feytox"
   ],
   "contact": {
-    "homepage": "https://syorito-hatsuki.dev/",
     "issues": "https://github.com/syorito-hatsuki/${modId}/issues",
     "sources": "https://github.com/syorito-hatsuki/${modId}"
   },
   "license": "MIT Licence",
-  "icon": "assets/${modId}/icon.png",
+  "icon": "assets/etherology/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "dev.syoritohatsuki.${modId}.TemplateMod"
+        "value": "ru.feytox.etherology.Etherology"
+      }
+    ],
+    "client": [
+      {
+        "value": "ru.feytox.etherology.EtherologyClient",
+        "adapter": "kotlin"
+      }
+    ],
+    "fabric-datagen": [
+      {
+        "value": "ru.feytox.etherology.EtherologyDataGenerator",
+        "adapter": "kotlin"
       }
     ]
   },
@@ -30,26 +43,20 @@
       },
       "badges": [],
       "update_checker": true
-    },
-    "mcb": [
-      {
-        "name": "Ducky House",
-        "fillColor": -13730510,
-        "outlineColor": -11751600
-      }
-    ]
+    }
   },
   "mixins": [
-    "${modId}.mixins.json"
+    "etherology.mixins.json",
+    {
+      "config": "etherology.client.mixins.json",
+      "environment": "client"
+    }
   ],
   "depends": {
     "fabric": "*",
-    "fabricloader": ">=${loaderVersion}",
-    "fabric-language-kotlin": ">=${fabricKotlinVersion}",
-    "minecraft": ">=${minecraftVersion}",
-    "java": ">=${javaVersion}"
-  },
-  "recommends": {
-    "modmenu-badges-lib": "*"
+    "fabricloader": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "*",
+    "java": "*"
   }
 }

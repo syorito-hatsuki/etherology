@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "ru.feytox.etherology.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": [
+    "MinecraftServerMixin"
+  ],
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
