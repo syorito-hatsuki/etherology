@@ -13,7 +13,7 @@
     "issues": "https://github.com/syorito-hatsuki/etherology/issues",
     "sources": "https://github.com/syorito-hatsuki/etherology"
   },
-  "license": "MIT Licence",
+  "license": "GNU Lesser General Public License v2.1\n",
   "icon": "assets/etherology/icon.png",
   "environment": "*",
   "entrypoints": {
