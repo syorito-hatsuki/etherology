@@ -10,8 +10,8 @@
     "Feytox"
   ],
   "contact": {
-    "issues": "https://github.com/syorito-hatsuki/${modId}/issues",
-    "sources": "https://github.com/syorito-hatsuki/${modId}"
+    "issues": "https://github.com/syorito-hatsuki/etherology/issues",
+    "sources": "https://github.com/syorito-hatsuki/etherology"
   },
   "license": "MIT Licence",
   "icon": "assets/etherology/icon.png",
