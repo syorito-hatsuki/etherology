@@ -45,9 +45,6 @@ repositories {
 
     /*   JEI   */
     maven( "https://maven.blamejared.com")
-
-    /*   Biolith   */
-    maven("https://maven.terraformersmc.com/")
 }
 
 dependencies {
@@ -72,7 +69,7 @@ dependencies {
     modRuntimeOnly("mezz.jei:jei-${minecraftVersion}-fabric:${jeiVersion}")
 
     val biolithVersion: String by project
-    modImplementation("com.terraformersmc:biolith-fabric:${biolithVersion}")
+    modImplementation("maven.modrinth:biolith:${biolithVersion}")
 }
 
 tasks {
