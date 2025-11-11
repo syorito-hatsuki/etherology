@@ -38,9 +38,6 @@
   },
   "custom": {
     "modmenu": {
-      "links": {
-        "modmenu.discord": "https://discord.gg/pbwnMwnUD6"
-      },
       "badges": [],
       "update_checker": true
     }
