@@ -37,3 +37,6 @@ gradle-app.setting
 
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
+
+src/main/generated/.cache
+src/client/generated/.cache

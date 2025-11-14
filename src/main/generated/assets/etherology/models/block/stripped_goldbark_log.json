@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "etherology:block/stripped_goldbark_log_top",
+    "side": "etherology:block/stripped_goldbark_log"
+  }
+}

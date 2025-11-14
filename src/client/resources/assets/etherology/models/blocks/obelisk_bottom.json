@@ -1,0 +1,33 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"textures": {
+		"bottom": "etherology:blocks/stone_obelisk_bottom",
+		"particle": "etherology:blocks/stone_obelisk_lower",
+		"lower": "etherology:blocks/stone_obelisk_lower"
+	},
+	"elements": [
+		{
+			"from": [1, 0, 1],
+			"to": [15, 6, 15],
+			"faces": {
+				"north": {"uv": [1, 10, 15, 16], "texture": "#lower"},
+				"east": {"uv": [1, 10, 15, 16], "texture": "#lower"},
+				"south": {"uv": [1, 10, 15, 16], "texture": "#lower"},
+				"west": {"uv": [1, 10, 15, 16], "texture": "#lower"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#bottom"},
+				"down": {"uv": [1, 1, 15, 15], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [2, 6, 2],
+			"to": [14, 16, 14],
+			"faces": {
+				"north": {"uv": [2, 0, 14, 10], "texture": "#lower"},
+				"east": {"uv": [2, 0, 14, 10], "texture": "#lower"},
+				"south": {"uv": [2, 0, 14, 10], "texture": "#lower"},
+				"west": {"uv": [2, 0, 14, 10], "texture": "#lower"}
+			}
+		}
+	]
+}

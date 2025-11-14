@@ -31,7 +31,7 @@
     ],
     "fabric-datagen": [
       {
-        "value": "ru.feytox.etherology.EtherologyDataGenerator",
+        "value": "ru.feytox.etherology.datagen.EtherologyDataGenerator",
         "adapter": "kotlin"
       }
     ]

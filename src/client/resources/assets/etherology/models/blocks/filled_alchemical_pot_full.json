@@ -1,0 +1,55 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"particle": "etherology:block/alchemical_pot_side",
+		"side": "etherology:block/alchemical_pot_side",
+		"top": "etherology:block/alchemical_pot_top",
+		"bottom": "etherology:block/alchemical_pot_bottom",
+		"front": "etherology:block/alchemical_pot_front",
+		"inside": "etherology:block/alchemical_pot_inside",
+		"content": "minecraft:block/water_still"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 12, 16],
+			"faces": {
+				"north": {"uv": [0, 4, 16, 16], "texture": "#front"},
+				"east": {"uv": [0, 4, 16, 16], "texture": "#side"},
+				"south": {"uv": [0, 4, 16, 16], "texture": "#front"},
+				"west": {"uv": [0, 4, 16, 16], "texture": "#side"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [1, 12, 1],
+			"to": [15, 14, 15],
+			"faces": {
+				"north": {"uv": [1, 2, 15, 4], "texture": "#front"},
+				"east": {"uv": [1, 2, 15, 4], "texture": "#side"},
+				"south": {"uv": [1, 2, 15, 4], "texture": "#front"},
+				"west": {"uv": [1, 2, 15, 4], "texture": "#side"},
+				"up": {"uv": [1, 1, 15, 15], "texture": "#top"}
+			}
+		},
+		{
+			"from": [14, 2, 2],
+			"to": [2, 14, 14],
+			"faces": {
+				"north": {"uv": [2, 2, 14, 14], "texture": "#inside"},
+				"east": {"uv": [2, 2, 14, 14], "texture": "#inside"},
+				"south": {"uv": [2, 2, 14, 14], "texture": "#inside"},
+				"west": {"uv": [2, 2, 14, 14], "texture": "#inside"},
+				"down": {"uv": [2, 2, 14, 14], "texture": "#bottom"}
+			}
+		},
+		{
+			"from": [2, 2, 2],
+			"to": [14, 13, 14],
+			"faces": {
+				"up": {"uv": [2, 2, 14, 14], "texture": "#content"}
+			}
+		}
+	]
+}
