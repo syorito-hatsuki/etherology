@@ -1,7 +1,6 @@
 package ru.feytox.etherology.registry
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.core.Registry
 import net.minecraft.core.registries.BuiltInRegistries
@@ -29,7 +28,7 @@ object ItemsGroupRegistry {
     )
 
     init {
-        ItemGroupEvents.modifyEntriesEvent(ETHEROLOGY_ITEM_GROUP_KEY).register { it: FabricItemGroupEntries ->
+        ItemGroupEvents.modifyEntriesEvent(ETHEROLOGY_ITEM_GROUP_KEY).register {
             it.prepend(BlocksRegistry.GOLDBARK_LOG)
             it.prepend(BlocksRegistry.GOLDBARK_WOOD)
             it.prepend(BlocksRegistry.WEEPING_GOLDBARK_LOG)
