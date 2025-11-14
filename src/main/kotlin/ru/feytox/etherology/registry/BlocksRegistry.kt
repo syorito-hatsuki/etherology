@@ -4,11 +4,8 @@ import net.minecraft.core.registries.Registries
 import net.minecraft.resources.ResourceKey
 import net.minecraft.resources.ResourceLocation
 import net.minecraft.world.item.Items
-import net.minecraft.world.level.block.Block
-import net.minecraft.world.level.block.Blocks
+import net.minecraft.world.level.block.*
 import net.minecraft.world.level.block.Blocks.logProperties
-import net.minecraft.world.level.block.RotatedPillarBlock
-import net.minecraft.world.level.block.SoundType
 import net.minecraft.world.level.block.state.BlockBehaviour.Properties
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument
 import net.minecraft.world.level.material.MapColor
@@ -57,8 +54,12 @@ object BlocksRegistry {
         ignitedByLava()
     }
 
-    inline fun <reified T : Block> register(
-        name: String, noinline factory: (Properties) -> T, settingsBuilder: Properties.() -> Unit = {}
+    val GOLDBARK_STAIRS = registerStair("goldbark_stairs", GOLDBARK_PLANKS)
+
+    private inline fun <reified T : Block> register(
+        name: String,
+        noinline factory: (Properties) -> T,
+        settingsBuilder: Properties.() -> Unit = {}
     ): T {
         val settings = Properties.of().apply(settingsBuilder)
         val block = Blocks.register(
@@ -68,5 +69,26 @@ object BlocksRegistry {
         ) as T
         Items.registerBlock(block)
         return block
+    }
+
+    private inline fun <reified T : Block> register(
+        name: String,
+        properties: Properties,
+        noinline factory: (Properties) -> T
+    ): T {
+        val block = Blocks.register(
+            ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(MOD_ID, name)),
+            { factory(properties) },
+            properties
+        ) as T
+
+        Items.registerBlock(block)
+        return block
+    }
+
+    private fun registerStair(name: String, block: Block): Block = register(
+        name, Properties.ofFullCopy(block)
+    ) { props ->
+        StairBlock(block.defaultBlockState(), props)
     }
 }

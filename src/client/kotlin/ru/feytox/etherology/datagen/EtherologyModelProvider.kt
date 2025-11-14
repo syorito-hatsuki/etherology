@@ -19,7 +19,8 @@ class EtherologyModelProvider(output: FabricDataOutput) : FabricModelProvider(ou
             .logWithHorizontal(BlocksRegistry.STRIPPED_GOLDBARK_LOG)
             .wood(BlocksRegistry.STRIPPED_GOLDBARK_WOOD)
 
-        blockStateModelGenerator.createTrivialCube(BlocksRegistry.GOLDBARK_PLANKS)
+        blockStateModelGenerator.family(BlocksRegistry.GOLDBARK_PLANKS)
+            .generateFor(EtherologyBlockFamilies.BIRCH_PLANKS)
     }
 
     override fun generateItemModels(itemModelGenerator: ItemModelGenerators) {

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "etherology:block/goldbark_planks",
+    "side": "etherology:block/goldbark_planks",
+    "top": "etherology:block/goldbark_planks"
+  }
+}

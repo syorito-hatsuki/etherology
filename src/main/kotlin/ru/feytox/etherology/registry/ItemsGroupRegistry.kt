@@ -34,6 +34,7 @@ object ItemsGroupRegistry {
             it.prepend(BlocksRegistry.WEEPING_GOLDBARK_LOG)
             it.prepend(BlocksRegistry.STRIPPED_GOLDBARK_LOG)
             it.prepend(BlocksRegistry.GOLDBARK_PLANKS)
+            it.prepend(BlocksRegistry.GOLDBARK_STAIRS)
         }
     }
 }
