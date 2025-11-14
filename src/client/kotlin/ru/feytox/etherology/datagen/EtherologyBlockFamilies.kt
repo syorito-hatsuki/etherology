@@ -11,7 +11,7 @@ object EtherologyBlockFamilies {
 //        .fenceGate(Blocks.BIRCH_FENCE_GATE)
 //        .pressurePlate(Blocks.BIRCH_PRESSURE_PLATE)
 //        .sign(Blocks.BIRCH_SIGN, Blocks.BIRCH_WALL_SIGN)
-//        .slab(Blocks.BIRCH_SLAB)
+        .slab(BlocksRegistry.GOLDBARK_SLAB)
         .stairs(BlocksRegistry.GOLDBARK_STAIRS)
 //        .door(Blocks.BIRCH_DOOR)
 //        .trapdoor(Blocks.BIRCH_TRAPDOOR)

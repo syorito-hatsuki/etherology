@@ -56,6 +56,14 @@ object BlocksRegistry {
 
     val GOLDBARK_STAIRS = registerStair("goldbark_stairs", GOLDBARK_PLANKS)
 
+	val GOLDBARK_SLAB = register("goldbark_slab", ::SlabBlock) {
+        mapColor(MapColor.SAND)
+        instrument(NoteBlockInstrument.BASS)
+        strength(2.0F, 3.0F)
+        sound(SoundType.WOOD)
+        ignitedByLava()
+    }
+
     private inline fun <reified T : Block> register(
         name: String,
         noinline factory: (Properties) -> T,
