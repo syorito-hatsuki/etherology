@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_right_open",
+  "textures": {
+    "bottom": "etherology:block/goldbark_door_bottom",
+    "top": "etherology:block/goldbark_door_top"
+  }
+}

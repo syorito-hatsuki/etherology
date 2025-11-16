@@ -24,6 +24,8 @@ loom {
             sourceSet("client")
         }
     }
+
+    accessWidenerPath = File("src/main/resources/etherology.accesswidener")
 }
 
 fabricApi {

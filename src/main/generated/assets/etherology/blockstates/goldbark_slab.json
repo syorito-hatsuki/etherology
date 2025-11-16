@@ -1,13 +1,13 @@
 {
   "variants": {
     "type=bottom": {
-      "model": "etherology:block/birch_slab"
+      "model": "etherology:block/goldbark_slab"
     },
     "type=double": {
       "model": "etherology:block/goldbark_planks"
     },
     "type=top": {
-      "model": "etherology:block/birch_slab_top"
+      "model": "etherology:block/goldbark_slab_top"
     }
   }
 }

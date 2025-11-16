@@ -1,0 +1,8 @@
+accessWidener v1 named
+
+accessible method net/minecraft/world/level/block/state/properties/BlockSetType register (Lnet/minecraft/world/level/block/state/properties/BlockSetType;)Lnet/minecraft/world/level/block/state/properties/BlockSetType;
+accessible method net/minecraft/world/level/block/state/properties/WoodType register (Lnet/minecraft/world/level/block/state/properties/WoodType;)Lnet/minecraft/world/level/block/state/properties/WoodType;
+accessible method net/minecraft/core/Registry register (Lnet/minecraft/core/Registry;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+
+accessible method net/minecraft/world/level/block/Blocks wallVariant (Lnet/minecraft/world/level/block/Block;Z)Lnet/minecraft/world/level/block/state/BlockBehaviour$Properties;
+

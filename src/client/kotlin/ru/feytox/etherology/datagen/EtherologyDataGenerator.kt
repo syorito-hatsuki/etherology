@@ -8,5 +8,7 @@ object EtherologyDataGenerator : DataGeneratorEntrypoint {
         val etherologyPack = fabricDataGenerator.createPack()
 
         etherologyPack.addProvider(::EtherologyModelProvider)
+        etherologyPack.addProvider(::EtherologyBlockTagProvider)
+        etherologyPack.addProvider(::EtherologyItemTagProvider)
     }
 }

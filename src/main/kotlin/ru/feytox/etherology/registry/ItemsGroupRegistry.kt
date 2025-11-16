@@ -35,6 +35,16 @@ object ItemsGroupRegistry {
             it.prepend(BlocksRegistry.STRIPPED_GOLDBARK_LOG)
             it.prepend(BlocksRegistry.GOLDBARK_PLANKS)
             it.prepend(BlocksRegistry.GOLDBARK_STAIRS)
+            it.prepend(BlocksRegistry.GOLDBARK_SLAB)
+            it.prepend(BlocksRegistry.GOLDBARK_FENCE)
+            it.prepend(BlocksRegistry.GOLDBARK_BUTTON)
+
+            it.prepend(BlocksRegistry.GOLDBARK_FENCE_GATE)
+            it.prepend(BlocksRegistry.GOLDBARK_PRESSURE_PLATE)
+            it.prepend(BlocksRegistry.GOLDBARK_SIGN)
+            it.prepend(BlocksRegistry.GOLDBARK_HANGING_SIGN)
+            it.prepend(BlocksRegistry.GOLDBARK_DOOR)
+            it.prepend(BlocksRegistry.GOLDBARK_TRAPDOOR)
         }
     }
 }

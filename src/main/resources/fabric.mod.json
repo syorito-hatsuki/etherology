@@ -16,6 +16,7 @@
   "license": "GNU Lesser General Public License v2.1\n",
   "icon": "assets/etherology/icon.png",
   "environment": "*",
+  "accessWidener": "etherology.accesswidener",
   "entrypoints": {
     "main": [
       {
