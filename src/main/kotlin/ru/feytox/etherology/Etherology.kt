@@ -3,10 +3,7 @@ package ru.feytox.etherology
 import com.mojang.logging.LogUtils
 import net.fabricmc.api.ModInitializer
 import org.slf4j.Logger
-import ru.feytox.etherology.registry.BlocksEntitiesRegistry
-import ru.feytox.etherology.registry.BlocksRegistry
-import ru.feytox.etherology.registry.ItemsGroupRegistry
-import ru.feytox.etherology.registry.ItemsRegistry
+import ru.feytox.etherology.registry.*
 
 object Etherology : ModInitializer {
     const val MOD_ID = "etherology"
@@ -18,5 +15,6 @@ object Etherology : ModInitializer {
         BlocksEntitiesRegistry
         ItemsGroupRegistry
         ItemsRegistry
+        StrippableBlocksRegistry
     }
 }
